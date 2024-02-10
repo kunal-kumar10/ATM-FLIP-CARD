@@ -1,0 +1,197 @@
+/* ?Reseting the Css */
+*{
+    padding : 0px;
+    margin : 0px;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 16px;
+}
+
+body{
+    width : 100%;
+    height : 100vh;
+    background-color: #181e41;
+}
+
+.card{
+    position: relative;
+    transition:all 0.8s 0s ease-in-out;
+    transform-style: preserve-3d;
+}
+
+.card-style{
+    color: rgb(205, 200, 200);
+    font-family: Raleway;
+    font-weight: bold;
+    z-index: 1;
+    width: 30vw;
+    height: 20vw;
+    background-color: rgba(42, 42, 42, 0.1);
+    backdrop-filter: blur(25px);
+    border-radius: 2rem;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.10) 0px 15px 12px;
+    position: absolute;
+    left: 50%;
+    top: 50vh;
+    transform: translate(-50%, -50%);
+}
+
+.circle{
+    width: 15rem;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background-image: linear-gradient(to right,#556270, #ff6b6b);
+    position: fixed;
+    left: 50%;
+    top: 50vh;
+    transform: translate(-50%, -50%);
+    z-index: -100;
+}
+
+#top-left {
+    transform: translate(-18rem, -2rem);
+}
+
+#bottom-right {
+    transform: translate(2rem, -13rem);
+}
+
+header{
+    padding-top : 1.5rem;
+    padding-left : 2rem;
+    padding-bottom : 1.5rem;
+}
+
+.chip-contactless img{
+    width: 3rem;
+    aspect-ratio: 1;
+    margin-left : 1rem;
+    margin-top : 1rem;
+}
+
+.chip-contactless img:nth-child(2){
+    width : 2.5rem;
+    filter: invert(0.7);
+}
+
+.card-details{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header > p{
+    font-size : 1.5rem;
+    font-family: Roboto;
+}
+#card_num{
+    letter-spacing: 0.15rem;
+    font-size: 2rem;
+}
+
+.validity{
+    display: flex;
+    width: 1rem;
+    padding-top: 0.3rem;
+}
+.validity>p{
+    padding-right : .5rem;
+    font-weight: 100;
+    font-size : 0.6rem;
+}
+
+.validity p:nth-child(2){
+    padding-top : 0.2rem;
+    font-size : 1rem;
+}
+
+#name{
+    padding-top : 0.8rem;
+    padding-left : 2rem;
+    align-self: start;
+    font-size : 1.3rem;
+    letter-spacing: 0.2rem;
+}
+
+.logo{
+    display : flex;
+    flex-direction: row-reverse;
+    padding-right : 2.5rem;
+    font-size : 3rem;
+}
+
+
+
+
+#back-side {
+    transform: translate(-50%, -50%) scaleX(-1);
+    z-index: -1;
+}
+
+.top{
+    padding : 0.8rem;
+    display : flex;
+    justify-content: space-between;
+}
+
+#back-side .top p{
+    font-size : 0.55rem;
+}
+
+.magstripe{
+    width : 100%;
+    height : 4vw;
+    background-color: black;
+}
+
+.cvv{
+    padding : 1rem;
+    font-size : 0.7rem;
+    font-weight: 300;
+    font-style: italic;
+    position: relative;
+}
+
+.cvv p:nth-child(2){
+    padding-left: 5.3rem;
+}
+
+.cvv p{
+    display: inline-block;
+    letter-spacing: 0.04rem;
+}
+
+.strip{
+    width : 60%;
+    height: 1.8vw;
+    margin-top : 0.5rem;
+    margin-right : 1rem;
+    background-image: repeating-linear-gradient(45deg,grey,white);
+    text-align: end;
+    font-size : 1.2rem;
+    color : black;
+    border-radius: 0.2rem;
+}
+
+.cvv p:nth-child(4){
+    position : absolute;
+    bottom: 1.5rem;
+}
+
+.terms{
+    padding-left : 0.8rem;
+    margin-top : 1rem;
+    font-size : 0.8rem;
+}
+
+.card:hover{
+    #back-side
+    {
+        z-index: 100;
+    }
+
+    transform: rotateY(180deg);
+}
